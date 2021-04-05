@@ -23,7 +23,7 @@ const navSlide = () => {
 function bgChanger(){
   if(this.scrollY > this.innerHeight / 0.5){
     document.body.classList.add('bg-active');
-  }else {
+  } else {
     document.body.classList.remove('bg-active');
   }
 
