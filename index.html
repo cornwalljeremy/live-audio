@@ -1,40 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live Audio Production</title>
-    <link rel="stylesheet" href="./assets/style.css">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Audio Production</title>
+  <link rel="stylesheet" href="./assets/style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <nav>
-        <div class="logo">
-          <a href="../../index.html">Live Audio Production</a>
-        </div>
-        <ul class="nav-links">
-          <li>
-            <a href="./pages/about.html">About</a>
-          </li>
-          <li>
-            <a href="./pages/pictures/pictures.html">Pictures</a>
-          </li>
-          <li>
-            <a href="./pages/services.html">Services</a>
-          </li>
-          <li>
-            <a href="./pages/contact.html">Contact</a>
-          </li>
-        </ul>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-      </nav>
-      <script src="./assets/script.js"></script>
-    </body>
+  <nav>
+    <div class="logo">
+      <a href="#top">Live Audio Production</a>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#about">About</a>
+      </li>
+      <li>
+        <a href="#pictures">Pictures</a>
+      </li>
+      <li>
+        <a href="#services">Services</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+  <section id="top" class="section1">
+    <div class="landing-page">
+      <!-- <img src="./pages/pictures/Craig Campell Photos/DSCN4543.JPG" /> -->
+      <h2>This is the main page!</h2>
+    </div>
+  </section>
+  <section id="about" class="section2">
+    <div class="about">
+      <h2>Here is the about section!</h2>
+    </div>
+  </section>
+  <section id="pictures" class="section3">
+    <div class="pictures">
+      <img src="./pages/pictures/img/stage.jpeg" alt="stage pic">
+    </div>
+  </section>
+  <section id="services" class="section4">
+    <div class="services">
+      <h2>Speakers and Stuff</h2>
+      <p>We have backline Speakers Microphones and lighting </p>
+    </div>
+  </section>
+  <section id="contact" class="section5">
+    <div class="contact">
+      <h2>Call us or email us</h2>
+      <form action="#">
+        <label for="first">First Name</label><br>
+        <input type="text" id="first" name="first"><br>
+        <label for="last">Last name</label><br>
+        <input type="text" id="last" name="last"><br>
+        <input type="submit" value="submit">
+      </form>
+    </div>
+  </section>
+  <script src="./assets/script.js"></script>
 </body>
+</body>
+
 </html>

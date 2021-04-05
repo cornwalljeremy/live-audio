@@ -1,119 +1,189 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 :root {
-    --yellow: #FFEB38;
-    --font-color: rgb(17, 99, 17);
-    /* --font: 'Roboto', sans-serif; */
+	--yellow: #ffeb38;
+	--font-color: rgb(17, 99, 17);
+	/* --font: 'Roboto', sans-serif; */
 }
 
 nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 15vh;
-  background-color: #FFEB38;
-  font-family: 'Roboto', sans-serif;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 15vh;
+	background-color: #ffeb38;
+	font-family: "Roboto", sans-serif;
+	z-index: 999;
 }
 .logo {
-  color: var(--font-color);
-  text-transform: uppercase;
-  letter-spacing: 7px;
-  font-size: 30px;
-  /* list-style: none; */
-  /* text-decoration: none; */
-  
+	color: var(--font-color);
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	font-size: 30px;
+	/* list-style: none; */
+	/* text-decoration: none; */
 }
 .logo a:visited {
-  color: var(--font-color);
-  text-decoration: none;
+	color: var(--font-color);
+	text-decoration: none;
 }
 .logo a:hover {
-  color: black;
+	color: black;
 }
 .nav-links {
-  display: flex;
-  /* background-color: black; */
-  justify-content: space-around;
-  width: 40%;
-  list-style: none;
+	display: flex;
+	/* background-color: black; */
+	justify-content: space-around;
+	width: 40%;
+	list-style: none;
 }
 .nav-links a {
-  color: var(--font-color);
-  text-decoration: none;
-  letter-spacing: 3px;
-  /* font-weight: bold; */
-  font-size: 20px;
+	color: var(--font-color);
+	text-decoration: none;
+	letter-spacing: 2px;
+
+	font-size: 20px;
 }
 .nav-links a:hover {
-  color: black;
+	color: white;
+}
+.nav-links a:active {
+	text-decoration: underline;
 }
 .burger {
-  display: none;
-  cursor: pointer;
+	display: none;
+	cursor: pointer;
 }
 .burger div {
-  width: 25px;
-  height: 2px;
-  margin: 5px;
-  background-color: var(--font-color);
-  transition: all 0.3 ease;
+	width: 25px;
+	height: 2px;
+	margin: 5px;
+	background-color: var(--font-color);
+	transition: all 0.3 ease;
 }
 
 @media screen and (max-width: 1024px) {
-  .nav-links {
-    width: 50%;
-  }
+	.nav-links {
+		width: 50%;
+	}
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-  .nav-links {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    background-color: var(--yellow);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%;
-    transform: translate(100%);
-    transition: transform 0.5s ease-in;
-  }
-  .nav-links li {
-    opacity: 0;
-  }
-  .burger {
-    display: block;
-  }
+	body {
+		overflow-x: hidden;
+	}
+	.nav-links {
+		position: absolute;
+		right: 0px;
+		height: 92vh;
+		top: 8vh;
+		background-color: var(--yellow);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 30%;
+		transform: translate(100%);
+		transition: transform 0.5s ease-in;
+	}
+	.nav-links li {
+		opacity: 0;
+	}
+	.burger {
+		display: block;
+	}
 }
 
 .nav-active {
-  transform: translateX(0%);
+	transform: translateX(0%);
 }
 
 @keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
 }
 
 .toggle .line1 {
-  transform: rotate(-70deg) translate(-5px, 6px);
+	transform: rotate(-70deg) translate(-5px, 6px);
 }
 .toggle .line2 {
-  opacity: 0;
+	opacity: 0;
 }
 .toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
+	transform: rotate(45deg) translate(-5px, -6px);
+}
+body {
+	background-color: rgb(53, 68, 80);
+	height: 100vh;
+	transition: all 0.5s ease;
+	scroll-behavior: smooth 0.5s;
+}
+
+.section1 {
+	background: url('../pages/pictures/img/DSCN4543.JPG');
+	min-height: 100vh;
+	min-width: 100vh;
+	background-size: cover;
+	padding: 0rem 5rem;
+}
+.section1,
+.section2,
+.section3,
+.section4,
+.section5 {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+
+.section2 {
+	background-color: rgb(53, 68, 80);
+}
+.section3 {
+	background-color: rgb(47, 47, 49);
+}
+.section4 {
+	background-color: rgb(110, 110, 199);
+}
+.section5 {
+	background-color: rgb(29, 29, 46);
+}
+
+.about {
+	height: 100vh;
+	text-align: center;
+	width: 70%;
+}
+
+img {
+	width: 90%;
+	height: 100vh;
+	object-fit: cover;
+}
+
+.services {
+	height: 100vh;
+	text-align: center;
+	width: 70%;
+}
+
+.contact {
+	height: 100vh;
+	text-align: center;
+	width: 70%;
+}
+
+.bg-active {
+	background-color: white;
 }
