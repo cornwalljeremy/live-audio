@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+
+.form-container {
+	position: relative;
+	left: 20%;
+	width: 60%;
+	height: 100vh;
+	background-color: #fff;
+}
+
+.contact-form {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	width: 80%;
+	height: 600px;
+}
+
+input {
+	width: 100%;
+	margin-top: 2rem;
+	border: none;
+	border-bottom: 1px solid black;
+}
+textarea {
+    width: 100%;
+	margin-top: 2rem;
+	/* border: none; */
+	border-bottom: 1px solid black;
+}
+.submit {
+    border: 1px solid black;
+    padding: 1rem;
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.6 ease-in-out;
+
+}
+.submit:hover {
+    background-color: rgb(17, 99, 17);
+    opacity: 0.6;
+}
