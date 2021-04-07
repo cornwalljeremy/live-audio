@@ -1,7 +1,7 @@
 const contactForm = document.querySelector('.contact-form');
 const name = document.getElementById('name');
 const email = document.getElementById('email');
-const venue = document.getElementById('venue');
+const phone = document.getElementById('phone');
 const date = document.getElementById('date');
 const description = document.getElementById('description');
 
@@ -12,7 +12,7 @@ contactForm.addEventListener('submit', (e) => {
     let formData = {
         name: name.value,
         email: email.value,
-        venue: venue.value,
+        phone: phone.value,
         date: date.value,
         description: description.value
     }
