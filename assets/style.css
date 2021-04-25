@@ -8,10 +8,13 @@
 	--font-color: rgb(17, 99, 17);
 	/* --font: 'Roboto', sans-serif; */
 }
-
+html {
+	scroll-behavior: smooth;
+}
 nav {
 	display: flex;
-	position: sticky;
+	position: fixed;
+	width: 100%;
 	top: 0px;
 	justify-content: space-around;
 	align-items: center;
@@ -80,7 +83,7 @@ nav {
 	.nav-links {
 		position: absolute;
 		right: 0px;
-		height: 92vh;
+		/* height: 92vh; */
 		top: 8vh;
 		background-color: var(--yellow);
 		display: flex;
@@ -146,6 +149,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
+	margin-top: 60px;
 }
 
 .section2 {
@@ -167,7 +171,7 @@ body {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 20px;
-	padding: 20px;
+	padding: 40px;
 }
 
 .pic {
